@@ -1,0 +1,188 @@
+{
+  "Header": {
+    "title": "Parking Re-Imagined",
+    "paragraph": "At Parkwise smart parking solutions simplify your journey. Our platform merges off-street and on-street data to direct you to the ideal spot in your city. With us, parking is not just found—it's redefined."
+  },
+  "About": {
+    "paragraph": "At Parkwise, we’re not just redefining parking; we’re revolutionizing the way cities breathe and move. Born from a vision to harmonize technology with urban life, our journey began in Chicago, where innovation meets necessity. We saw a future where the quest for parking becomes as seamless as the drive itself, powered by data, analytics, and the pulse of city life. ",
+    "paragraph2": "Our team, a dynamic fusion of urban planners, data scientists, and digital nomads, is united by a single mission: to engineer not just a solution but an experience. An experience that transcends the mundane act of parking to unlock efficiency, sustainability, and unparalleled ease for every urban adventurer. ",
+    "paragraph3": "With Parkwise, we leverage cutting-age AI to parse through real-time and historical parking data, delivering personalized parking solutions that cater to price sensitivities, proximity desires and the ever-elusive quest for peace of mind in the urban sprawl. Our platform isn't just smart; it's intuitive, learning from each interaction to make your next parking experience smoother than the last.",
+    "paragraph4": "We're not just a company; we're a movement towards a more navigable, less congested future. Our eco-conscious approach reduces emissions and urban congestion, embodying our commitment to not only serve our users but also protect our planet.",
+    "paragraph5": "Join us as we pave the way to a smarter, more connected urban journey. Because at Parkwise, we believe that the right space can transform your day, and the right approach can transform the world.",
+    "Why": [
+      "AI-Powered Precision",
+      "Real-Time Updates",
+      "Eco-Friendly Solutions",
+      "Tailored Parking Experiences"
+    ],
+    "Why2": [
+      "Cost-Efficiency Insights",
+      "Urban Pulse Mapping",
+      "Seamless Navigation",
+      "Data-Driven Decisions"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-map-marker",
+      "name": "Instant Spot Locator",
+      "text": "Unlock instant access to prime parking spots with our real-time locator. It's parking at the speed of life, optimized for your urban adventures."
+    },
+    {
+      "icon": "fa fa-calendar",
+      "name": "Smart Reservation System",
+      "text": "Book your perfect spot in advance with our intelligent reservation system. It’s your parking, reserved on-demand, ensuring peace of mind before you even start your journey."
+    },
+    {
+      "icon": "fa fa-tree",
+      "name": "Emission Reduction Routes",
+      "text": "Effortlessly navigate the greenest, most eco-friendly path to your destination. Our advanced routes strategically minimize environmental impact, significantly contributing to cleaner air and a healthier, more sustainable planet."
+    },
+    {
+      "icon": "fa fa-pie-chart",
+      "name": "Parking Analytics Dashboard",
+      "text": "Dive deep into parking insights with our comprehensive analytics dashboard. Make data-driven decisions that save time and money, powered by predictive intelligence."
+    },
+    {
+      "icon": "fa fa-heart",
+      "name": "24/7 Customer Support",
+      "text": "Experience unparalleled support with our 24/7 concierge service. We're here to ensure your parking journey is seamless, from start to finish."
+    },
+    {
+      "icon": "fa fa-users",
+      "name": "Community-Driven Updates",
+      "text": "Stay ahead with updates from our community. Real-time alerts on parking availability and conditions, because the best insights come from those who drive the streets with you."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": "2233 Tech Dr, Evanston, IL 60208 ",
+    "phone": "+1 908 608 7068",
+    "email": "info@parkwise.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-code",
+      "title": "AI Powered Spot Prediction",
+      "text": "Our engine predicts spot availability with unparalleled accuracy.  It's not magic— it's AI, tailored to save you time and elevate your day."
+    },
+    {
+      "icon": "fa fa-gear",
+      "title": "Customized Parking Experience",
+      "text": "Your parking, personlized. With just a few taps, set your perfereces for price, proximity, and privacy to unlock a bespoke parking experience."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Urban Pulse Mapping",
+      "text": "Discover the city's vibrant hotspots and remain at the heart of the buzz. Our dynamic heatmap ensures you're always just a step away from where the action unfolds."
+    },
+    {
+      "icon": "fa fa-money",
+      "title": "Flexible Pricing Insights",
+      "text": "We know money matters and we've got you covered. Our platform provides real-time pricing insights to ensure you're always in the know.  It’s smart parking economics, tailored for the modern urbanite."
+    }
+  ]
+}
