@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
@@ -18,14 +18,21 @@ const DemoPopup = ({ latitude, longitude, max_distance, parking_time, budget }) 
     const renderPreds = () => {
         return (
             <div>
-                {preds.map((pred) => (
-                    <div>
-                        <p>{pred}</p>
+                {preds.map((pred, index) => (
+                    <div key={index}>
+                        <p>address: {pred.address}</p>
+                        <p>current spots: {pred.currentSpots}</p>
+                        <p>latitude: {pred.latitude}</p>
+                        <p>longitude: {pred.longitude}</p>
+                        <p>max spots: {pred.maxAvailableSpots}</p>
+                        <p>walking time: {pred.walkingTime}</p>
                     </div>
                 ))}
             </div>
-        )
-    }
+        );
+    };
+    
+    
 
     const fetchSpots = async () => {
         try {
@@ -70,17 +77,18 @@ const DemoPopup = ({ latitude, longitude, max_distance, parking_time, budget }) 
                 },
             );
 
-            setPreds(setPredsTo)
+            console.log("Set preds to: ", setPredsTo);
+            console.log("Set preds to.data: ", setPredsTo.data);
+            console.log("Set preds to.data.data: ", setPredsTo.data.data);
+
+
+            setPreds(setPredsTo.data.data);
 
             console.log(preds);
         } catch (error) {
             console.error('Error:', error);
         }
     };
-
-    useEffect(() => {
-        renderPreds();
-    }, [preds]);
 
     const handlePopupOpen = () => {
         // Call handleClick when the popup opens
