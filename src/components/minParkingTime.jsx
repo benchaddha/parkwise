@@ -23,7 +23,7 @@ const MinParkingTime = ({ setMinParkingTime }) => {
 
     return (
         <div className="flex flex-row items-center">
-            <label className="px-4 text-4xl text-white" htmlFor="distance">Min Parking Time (minutes)</label>
+            <label className="px-4 text-4xl text-white" htmlFor="distance">Max Parking Time (hours)</label>
             <input
                 className="text-4xl p-4"
                 type="number"

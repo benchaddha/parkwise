@@ -23,7 +23,7 @@ const MaxDistance = ({ setDistance }) => {
 
     return (
         <div className="flex flex-row items-center">
-            <label className="px-4 text-4xl text-white" htmlFor="distance">Max Distance:</label>
+            <label className="px-4 text-4xl text-white" htmlFor="distance">Max Minutes Willing to Walk:</label>
             <input
                 className="text-4xl p-4"
                 type="number"
