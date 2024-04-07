@@ -1,39 +1,3 @@
-// import { Image } from "./image";
-// import React from "react";
-// import PlaceComponent from './search.jsx';
-// import { useState } from 'react';
-
-
-// export const Demo = (props) => {
-//   const [results, setResults] = useState([]);
-//   return (
-//     <div id="portfolio" className="text-center">
-//       <div className="container">
-//         <div className="section-title">
-//           <h2>Demo</h2>
-//           <p>
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-//             dapibus leonec.
-//           </p>
-//         </div>
-//         <div className="row">
-//           <div className="portfolio-items">
-//             {props.data
-//               ? props.data.map((d, i) => (
-//                   <div
-//                     key={`${d.title}-${i}`}
-//                     className="col-sm-6 col-md-4 col-lg-4"
-//                   >
-//                     <PlaceComponent setResults={setResults} />
-//                   </div>
-//                 ))
-//               : "Loading..."}
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
 "use client";
 import React from "react";
 import PlaceComponent from './search.jsx';
@@ -44,20 +8,17 @@ import MinParkingTime from "./minParkingTime.jsx";
 import DemoPopup from "./demoPopup.jsx";
 
 export const Demo = () => {
-  const [search, setSearch] = useState({});
   const [price, setPrice] = useState(999);
   const [maxDistance, setMaxDistance] = useState(999);
   const [minParkingTime, setMinParkingTime] = useState(999);
-
-  let searchLatitude = 0;
-  let searchLongtiude = 0;
+  const [searchLatitude, setSearchLatitude] = useState(0);
+  const [searchLongitude, setSearchLongitude] = useState(0);
 
   const handlePlaceChanged = (values) => {
     // Handle the values received from PlaceComponent
-    setSearch(values);
-    searchLatitude = values.geometry.location.lat();
-    searchLongtiude = values.geometry.location.lng();
-    console.log(values, searchLatitude, searchLongtiude);
+    setSearchLatitude(values.geometry.location.lat());
+    setSearchLongitude(values.geometry.location.lng());
+    console.log(values, searchLatitude, searchLongitude);
   };
 
   const handlePriceChanged = (values) => {
@@ -83,19 +44,19 @@ export const Demo = () => {
   return (
     <div id="portfolio" className="text-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
       <div className="container">
-        <div className="section-title">
+        <div className="text-4xl text-white section-title">
           <h2 style={{ color: '#FFFFFF' }} >Demo</h2>
-          <p style={{ color: '#FFFFFF' }}>
+          <div className="text-4xl text-white">
             Where are you headed? Search for a place to get started.
-          </p>
+          </div>
         </div>
-        {/* PlaceComponent without mapping or iterating */}
         <PlaceComponent onPlaceChanged={ handlePlaceChanged }/>
-        <PriceButtonComponent setPrice={ handlePriceChanged }/>
-        <MaxDistance setDistance={ handleMaxDistanceChanged }/>
-        <MinParkingTime setMinParkingTime={ handleMinParkingTimeChanged }/>
-        <DemoPopup latitude={searchLatitude} longitude={searchLongtiude} max_distance={maxDistance} parking_time={minParkingTime} budget={price}/>
-
+        <div className="pt-8 flex flex-col gap-4 justify-center align-center items-center">
+          <PriceButtonComponent setPrice={ handlePriceChanged }/>
+          <MaxDistance setDistance={ handleMaxDistanceChanged }/>
+          <MinParkingTime setMinParkingTime={ handleMinParkingTimeChanged }/>
+          <DemoPopup latitude={searchLatitude} longitude={searchLongitude} max_distance={maxDistance} parking_time={minParkingTime} budget={price}/>
+        </div>
       </div>
     </div>
   );

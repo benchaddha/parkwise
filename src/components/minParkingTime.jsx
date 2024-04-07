@@ -22,16 +22,27 @@ const MinParkingTime = ({ setMinParkingTime }) => {
     };
 
     return (
-        <div>
-            <label htmlFor="distance">Min Parking Time (minutes)</label>
+        <div className="flex flex-row items-center">
+            <label className="px-4 text-4xl text-white" htmlFor="distance">Min Parking Time (minutes)</label>
             <input
+                className="text-4xl p-4"
                 type="number"
                 id="minParkingTime"
                 value={minParkingTime}
                 onChange={handleInputChange}
             />
-            <button onClick={handleIncrement}>+</button>
-            <button onClick={handleDecrement}>-</button>
+            <button 
+                className="w-10 h-10 px-2 py-1 ml-2 bg-green-500 text-white text-xl font-bold rounded-full focus:outline-none focus:ring focus:border-blue-300"
+                onClick={handleIncrement}
+            >
+                +
+            </button>
+            <button 
+                className="w-10 h-10 px-2 py-1 ml-2 bg-red-500 text-white text-xl font-bold rounded-full focus:outline-none focus:ring focus:border-blue-300"
+                onClick={handleDecrement}
+            >
+                -
+            </button>
         </div>
     );
 };
