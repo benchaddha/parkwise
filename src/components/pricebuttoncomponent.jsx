@@ -10,7 +10,7 @@ const PriceButtonComponent = ({ setPrice }) => {
 
     return (
         <div className="flex flex-row">
-            <label htmlFor="price" className="text-4xl text-white px-4">Price:</label>
+            <label htmlFor="price" className="text-4xl text-white px-4">Price per Hour:</label>
             <div className="flex flex-row gap-4">
                 <button
                     onClick={() => handlePriceClick(4.75)}

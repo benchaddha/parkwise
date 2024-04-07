@@ -51,7 +51,7 @@ export const Demo = () => {
           </div>
         </div>
         <PlaceComponent onPlaceChanged={ handlePlaceChanged }/>
-        <div className="pt-8 flex flex-col gap-4 justify-center align-center items-center">
+        <div className="pt-8 flex flex-col gap-8 justify-center align-center items-center">
           <PriceButtonComponent setPrice={ handlePriceChanged }/>
           <MaxDistance setDistance={ handleMaxDistanceChanged }/>
           <MinParkingTime setMinParkingTime={ handleMinParkingTimeChanged }/>

@@ -18,20 +18,31 @@ const DemoPopup = ({ latitude, longitude, max_distance, parking_time, budget }) 
     const renderPreds = () => {
         return (
             <div>
+                <div className="font-bold text-red-700 text-4xl">your best bets are as follows:</div>
                 {preds.map((pred, index) => (
                     <div key={index}>
-                        <p>address: {pred.address}</p>
-                        <p>current spots: {pred.currentSpots}</p>
-                        <p>latitude: {pred.latitude}</p>
-                        <p>longitude: {pred.longitude}</p>
-                        <p>max spots: {pred.maxAvailableSpots}</p>
-                        <p>walking time: {pred.walkingTime}</p>
+                        <div className="text-blue-400">
+                            <p><strong>address:</strong> {pred.address}</p>
+                            <p><strong>current spots:</strong> {pred.currentSpots}</p>
+                            { /* <p><strong>latitude:</strong> {pred.latitude}</p>
+                            <p><strong>longitude:</strong> {pred.longitude}</p> *} */}
+                            <p><strong>max spots:</strong> {pred.maxAvailableSpots}</p>
+                        </div>
+                        <p className="text-purple-600"><strong>walking time:</strong> {pred.walkingTime.toFixed(1)}</p>
+                        <p className="text-3xl text-green-600"><strong>availability scores:</strong></p>
+                        <div className="text-green-500">
+                            <p><strong>this hour: </strong> {pred.predictions[0].probability.toFixed(1)} </p>
+                            <p><strong>next hour </strong> {pred.predictions[1].probability.toFixed(1)} </p>
+                            <p><strong>in two hours: </strong> {pred.predictions[2].probability.toFixed(1)} </p>
+                        </div>
+
+                        <p></p>~{"\n"}
                     </div>
                 ))}
             </div>
         );
-    };
-    
+    };    
+
     
 
     const fetchSpots = async () => {
@@ -96,10 +107,12 @@ const DemoPopup = ({ latitude, longitude, max_distance, parking_time, budget }) 
     };
 
     return (
-        <Popup trigger={<button className="btn-custom btn-centered bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> get my matches! </button>} onOpen={handlePopupOpen} position="right center">
-            <div>
-                popup
-                { renderPreds() }
+        <Popup width="100%" trigger={<button className="btn-custom btn-centered bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> get my matches! </button>} onOpen={handlePopupOpen} position="right center" modal closeOnDocumentClick overlayStyle={{ background: 'rgba(0,0,0,0.5)' }} arrowStyle={{ color: '#000' }}>
+            <div className="p-4">
+                <div className="max-h-[600px] overflow-y-auto">
+                    <p>awaiting matches... [give about 10 seconds for AWS]</p>
+                    { renderPreds() }
+                </div>
             </div>
         </Popup>
     );
