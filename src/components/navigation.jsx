@@ -1,10 +1,10 @@
 const Navigation = () => {
-  const linkCSS = "flex flex-col items-center text-[#333] hover:text-blue-700 hover:text-white";
+  const linkCSS = "flex flex-col items-center text-[#333] hover:text-blue-700";
 
   return (
-    <div className="w-full h-[60px] bg-white sticky top-0 text-4xl z-10">
-      <div className="h-full flex justify-center items-center">
-        <img className="flex justify-start items-center absolute top-4 left-4" src="/Logo.webp" alt="Logo" width={50} height={50}/>
+    <div className="h-[60px] bg-white sticky top-0 text-4xl z-10">
+      <div className="h-full flex justify-center items-center align-center ">
+        <img className="" src="logos/parkwise-colored-transparent.png" alt="Logo" width={100} height={100}/>
         <ul className="flex flex-row gap-20">
           <li className="flex items-center">
             <a href="" className={linkCSS}>
