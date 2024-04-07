@@ -10,6 +10,7 @@ const PriceButtonComponent = ({ setPrice }) => {
 
     return (
         <div>
+            <label htmlFor="price">Price:</label>
             <button
                 onClick={() => handlePriceClick(4.75)}
                 disabled={selectedPrice === 4.75}

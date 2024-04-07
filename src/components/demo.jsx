@@ -41,6 +41,7 @@ import { useState } from 'react';
 import PriceButtonComponent from "./pricebuttoncomponent.jsx";
 import MaxDistance from "./maxdistance.jsx";
 import MinParkingTime from "./minParkingTime.jsx";
+import DemoPopup from "./demoPopup.jsx";
 
 export const Demo = () => {
   const [search, setSearch] = useState({});
@@ -93,6 +94,7 @@ export const Demo = () => {
         <PriceButtonComponent setPrice={ handlePriceChanged }/>
         <MaxDistance setDistance={ handleMaxDistanceChanged }/>
         <MinParkingTime setMinParkingTime={ handleMinParkingTimeChanged }/>
+        <DemoPopup latitude={searchLatitude} longitude={searchLongtiude} max_distance={maxDistance} parking_time={minParkingTime} budget={price}/>
 
       </div>
     </div>
