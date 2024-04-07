@@ -9,7 +9,7 @@ At the heart of Parkwise lies an intelligent, data-driven tool designed to strea
 ### Cutting-Edge Technology
 
 Our platform is a marvel of modern engineering, crafted with the latest tech stack:
-- **Frontend Excellence**: Built with the sleek synergy of Next.js, React.js, and Tailwind CSS.
+- **Frontend Excellence**: Built with the sleek synergy of React.js, and Tailwind CSS.
 - **Backend Innovation**: Powered by AWS, our backend architecture leverages diverse APIs and a custom-built web scraper to rank potential parking spots with unrivaled accuracy.
 
 ### Lessons from the Trenches
