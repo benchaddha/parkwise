@@ -116,6 +116,7 @@ hr {
 .navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent;
 }
+
 .navbar-default .navbar-nav > .active > a:after,
 .navbar-default .navbar-nav > .active > a:hover:after,
 .navbar-default .navbar-nav > .active > a:focus:after {
@@ -128,10 +129,16 @@ hr {
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
   content: "" !important;
   transition: width 0.2s !important;
+  background-image: url(../logos/parkwise_colored_transparent.png);
 }
 .navbar-toggle {
   border-radius: 0;
 }
+
+.navbar-default img {
+  padding-bottom: 15px;
+}
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #fff;
@@ -140,6 +147,10 @@ hr {
 .navbar-default .navbar-toggle:hover > .icon-bar {
   background-color: #608dfd;
 }
+.navbar-default .navbar-toggle:focus > .icon-bar {
+  image: url(../logos/parkwise_colored_transparent.png);
+}
+
 .section-title {
   margin-bottom: 70px;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "./image";
 
 export const Navigation = (props) => {
   return (
@@ -16,17 +17,26 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
-          </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            Parkwise
-          </a>{" "}
+          </button>{" "}
         </div>
 
         <div
           className="collapse navbar-collapse"
           id="bs-example-navbar-collapse-1"
         >
+          <a className="navbar-brand page-scroll" href="#page-top">
+            <img
+              src="./logos/parkwise-colored-transparent.png"
+              alt="logo"
+              style={{ width: "100px", height: "100px" }}
+            />
+          </a>
           <ul className="nav navbar-nav navbar-right">
+            <Image
+              src="./parkwise_colored.jpeg"
+              className="img-responsive"
+              alt="logo"
+            />
             <li>
               <a href="#features" className="page-scroll">
                 Features

@@ -136,23 +136,23 @@
   "Team": [
     {
       "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
+      "name": "Liam Powers",
+      "job": "Power Napper"
     },
     {
       "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
+      "name": "Ben Chadda",
+      "job": "Red Bull Enthusiast"
     },
     {
       "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
+      "name": "Kavi Subramanyan",
+      "job": "The Mad Scientist"
     },
     {
       "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
+      "name": "Red Bull",
+      "job": "Ol reliable"
     }
   ],
   "Contact": {
@@ -172,7 +172,7 @@
     {
       "icon": "fa fa-gear",
       "title": "Customized Parking Experience",
-      "text": "Your parking, personlized. With just a few taps, set your perfereces for price, proximity, and privacy to unlock a bespoke parking experience."
+      "text": "Your parking, personalized. With just a few taps, set your preferences for price, proximity, and privacy to unlock a bespoke parking experience."
     },
     {
       "icon": "fa fa-group",

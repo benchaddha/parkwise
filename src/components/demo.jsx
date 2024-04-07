@@ -34,21 +34,31 @@
 //     </div>
 //   );
 // };
+"use client";
 import React from "react";
 import PlaceComponent from './search.jsx';
+import { useState } from 'react';
 
 export const Demo = () => {
+  const [searchResults, setSearchResults] = useState({});
+
+  const handlePlaceChanged = (values) => {
+    // Handle the values received from PlaceComponent
+    setSearchResults(values);
+    console.log(values);
+  };
+  
   return (
     <div id="portfolio" className="text-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
       <div className="container">
         <div className="section-title">
-          <h2 style={{ color: '#FFFFFF'}} >Demo</h2>
-          <p style={{ color: '#FFFFFF'}}>
+          <h2 style={{ color: '#FFFFFF' }} >Demo</h2>
+          <p style={{ color: '#FFFFFF' }}>
             Where are you headed? Search for a place to get started.
           </p>
         </div>
         {/* PlaceComponent without mapping or iterating */}
-        <PlaceComponent />
+        <PlaceComponent onPlaceChanged={handlePlaceChanged}/>
       </div>
     </div>
   );
