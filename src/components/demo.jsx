@@ -45,8 +45,8 @@ export const Demo = () => {
     <div id="portfolio" className="text-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
       <div className="container">
         <div className="text-4xl text-white section-title">
-          <h2 style={{ color: '#FFFFFF' }} >Demo</h2>
-          <div className="text-4xl text-white">
+        <h2 className="text-2xl xl:text-4xl" style={{ color: '#FFFFFF' }}>Demo</h2>
+          <div className="text-2xl text-white">
             Where are you headed? Search for a place to get started.
           </div>
         </div>
