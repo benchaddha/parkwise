@@ -93,7 +93,7 @@ def lambda_handler(event, context):
         for hour in pred:
             curr_predictions.append({
                 'spaces' : hour["availability"],
-                'probability' : float(hour["blockPrediction"])/max_spaces            
+                'probability' : (float(hour["blockPrediction"])/max_spaces)*100                      
             })
             
         filtered_meters.append({
