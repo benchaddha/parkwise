@@ -38,16 +38,47 @@
 import React from "react";
 import PlaceComponent from './search.jsx';
 import { useState } from 'react';
+import PriceButtonComponent from "./pricebuttoncomponent.jsx";
+import MaxDistance from "./maxdistance.jsx";
+import MinParkingTime from "./minParkingTime.jsx";
 
 export const Demo = () => {
-  const [searchResults, setSearchResults] = useState({});
+  const [search, setSearch] = useState({});
+  const [price, setPrice] = useState(999);
+  const [maxDistance, setMaxDistance] = useState(999);
+  const [minParkingTime, setMinParkingTime] = useState(999);
+
+  let searchLatitude = 0;
+  let searchLongtiude = 0;
 
   const handlePlaceChanged = (values) => {
     // Handle the values received from PlaceComponent
-    setSearchResults(values);
+    setSearch(values);
+    searchLatitude = values.geometry.location.lat();
+    searchLongtiude = values.geometry.location.lng();
+    console.log(values, searchLatitude, searchLongtiude);
+  };
+
+  const handlePriceChanged = (values) => {
+    // Handle the values received from PlaceComponent
+    setPrice(values);
     console.log(values);
   };
-  
+
+  const handleMaxDistanceChanged = (values) => {
+    // Handle the values received from PlaceComponent
+    setMaxDistance(values);
+    console.log(values);
+  };
+
+  const handleMinParkingTimeChanged = (values) => {
+    // Handle the values received from PlaceComponent
+    setMinParkingTime(values);
+    console.log(values);
+  };
+
+  //TODO: longitude, latitude, max_distance, parking_time, budget ALL required
+
   return (
     <div id="portfolio" className="text-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
       <div className="container">
@@ -58,7 +89,11 @@ export const Demo = () => {
           </p>
         </div>
         {/* PlaceComponent without mapping or iterating */}
-        <PlaceComponent onPlaceChanged={handlePlaceChanged}/>
+        <PlaceComponent onPlaceChanged={ handlePlaceChanged }/>
+        <PriceButtonComponent setPrice={ handlePriceChanged }/>
+        <MaxDistance setDistance={ handleMaxDistanceChanged }/>
+        <MinParkingTime setMinParkingTime={ handleMinParkingTimeChanged }/>
+
       </div>
     </div>
   );
